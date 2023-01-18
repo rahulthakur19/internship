@@ -1,0 +1,81 @@
+.app {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.navbar{
+  display: flex;
+  width:100%;
+  height: 80px;
+  background-color: blueviolet;
+  justify-content: space-between;
+  align-items: center;
+  font: 300;
+}
+
+.hero
+{ 
+
+  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-gap: 8pc;
+  grid-template-columns: repeat(auto-fit, 400px)
+  
+}
+@media only screen and (max-width: 200px) {
+  .hero
+  {
+    grid-template-columns: repeat(auto-fit, 300px);
+   
+}}
+@media only screen and (max-width: 100px) {
+  .hero {
+    grid-template-columns: repeat(auto-fit, 300px);
+   
+}}
+.card {
+  border-color: black;
+  width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+img{
+  width: 400px;
+  height: 300px;
+}
+/* .popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(171, 77, 77);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+} */
